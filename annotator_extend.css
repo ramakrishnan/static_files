@@ -1,0 +1,112 @@
+/*CSS from 
+https://www.sitepoint.com/pure-css3-speech-bubbles/
+*/
+
+div.speech {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #666;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    padding: 5px;
+    top: -5px;
+}
+
+div.speech:before,
+div.speech:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+div.speech:before {
+    left: 30px;
+    top: 28px;
+    border: 7px solid;
+    border-color: #666 transparent transparent #666;
+}
+
+div.speech:after {
+    left: 38px;
+    top: 100px;
+    border: 1px solid;
+    border-color: #fff transparent transparent #fff;
+}
+
+
+/* Extra CSS */
+
+.adder {
+    height: 30px;
+    width: 230px;
+    background: #c2c2c2;
+    position: absolute;
+}
+
+.adder .colorCode div {
+    float: left;
+    margin: 0 8px;
+}
+
+.annotator-adder {
+    background-image: none !important;
+}
+
+.annotator-adder .adder .colorCode .round p {
+    text-decoration: underline;
+    font-size: 15px;
+    color: #0000FF;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.extra-annotator-controls {
+    background-image: none;
+}
+
+.extra-annotator-controls .round {
+    height: 15px;
+    width: 15px;
+    border-radius: 25px;
+    float: left;
+    margin-right: 25px;
+}
+
+.colorPickers {
+    height: 15px;
+    padding: 5px 0 0 15px;
+    padding: 10px 0 10px 15px;
+    border: 1px solid black;
+}
+
+.annotator-adder button {
+    padding: 0 !important;
+}
+
+.annotator-viewer button:hover {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.hg_FF0000 {
+    background: #f00 !important;
+}
+
+.hg_00FF00 {
+    background: #0f0 !important;
+}
+
+.hg_0000FF {
+    background: #00f !important;
+}
+
+.only-highlight {
+    min-width: 50px !important;
+}
+
+.invisible {
+    width: 0 !important;
+    height: 0 !important;
+}
